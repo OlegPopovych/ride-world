@@ -44,7 +44,12 @@
 .description {
   &__illustrations {
     @include pageGrid;
+  }
 
+  opacity: 0;
+
+  &--animate {
+    @include animation(moveInRight);
   }
 
   &__link {

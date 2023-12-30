@@ -6,6 +6,11 @@
   line-height: 32px;
   text-transform: capitalize;
   color: $color-white;
+  opacity: 0;
+
+  &--animate {
+    @include animation(moveInLeft);
+  }
 
   @include onTablet {
     font-size: 48px;

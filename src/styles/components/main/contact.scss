@@ -5,6 +5,12 @@
   &__wrapper {
     @include pageGrid;
     row-gap: 48px;
+
+    opacity: 0;
+
+    &--animate {
+      @include animation(moveInBottom);
+    }
   }
 
   &__form {

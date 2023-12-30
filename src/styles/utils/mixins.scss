@@ -69,3 +69,7 @@
     #{$property}: $toValue;
   }
 }
+
+@mixin animation ($property) {
+  animation: $property $blocks-time-duration ease-in-out forwards;
+}

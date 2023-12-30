@@ -6,6 +6,11 @@
   &__products {
     @include pageGrid;
     row-gap: 40px;
+    opacity: 0;
+
+    &--animate {
+      @include animation(moveInRight);
+    }
 
   }
 
